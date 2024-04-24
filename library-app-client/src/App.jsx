@@ -1,7 +1,8 @@
 import "./App.css";
 import axios from "axios";
 import { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./views/Navbar";
+import Bookstore from "./views/Bookstore";
 
 function App() {
   const [screen, setScreen] = useState('home');
@@ -15,13 +16,12 @@ function App() {
   //     });
   // }
 
-  
   if (screen === 'home'){
     return (
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen } />
         <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p1>Home!</p1>  
+          <p>Home!</p>  
         </section>
       </div>
     );
@@ -31,8 +31,8 @@ function App() {
     return (
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p1>Test!</p1>
+        <section className="bg-green-400 h-[calc(100vh-126px)] overflow-y-scroll">
+          <Bookstore />
         </section>
       </div>  
     )
@@ -43,7 +43,7 @@ function App() {
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p1>Aticles not implemented</p1>
+          <p>Aticles not implemented</p>
         </section>
       </div>  
     )
@@ -54,7 +54,7 @@ function App() {
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p1>Papers not implemented!</p1>
+          <p>Papers not implemented!</p>
         </section>
       </div>  
     )

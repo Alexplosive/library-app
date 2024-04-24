@@ -11,7 +11,6 @@ module.exports.addBook = (req, res) => {
             author: req.body.author,
             country: req.body.country,
             language: req.body.language,
-            link: req.body.link,
             pages: req.body.pages,
             title: req.body.title,
             year: req.body.year
@@ -37,7 +36,6 @@ module.exports.updateBook = (req, res) => {
             author: req.body.author,
             country: req.body.country,
             language: req.body.language,
-            link: req.body.link,
             pages: req.body.pages,
             title: req.body.title,
             year: req.body.year

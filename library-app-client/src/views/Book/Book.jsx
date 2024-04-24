@@ -40,7 +40,7 @@ function Book ({ book, setReload }) {
     return updateForm;
   }
   return(
-    <section className="border border-current flex flex-col items-center w-60">
+    <section className="bg-green-400 border border-current flex flex-col items-center w-1/2">
       <p>Book name : {book.title} </p>
       <p>Author : {book.author} </p>
       <p>Origin : {book.country} </p>

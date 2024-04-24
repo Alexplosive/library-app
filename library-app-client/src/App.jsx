@@ -3,17 +3,15 @@ import { useState } from "react";
 import Navbar from "./views/Navbar";
 import Bookstore from "./views/Book/Bookstore";
 import AddBook from "./views/Book/AddBook";
+import Home from "./views/Home";
 
 function App() {
   const [screen, setScreen] = useState('HOME');
 
   if (screen === 'HOME'){
     return (
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen } />
-        <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p>Home!</p>  
-        </section>
+      <div className="h-full bg-yellow-500">
+        <Home setScreen={setScreen} />
       </div>
     );
   }
@@ -22,7 +20,7 @@ function App() {
     return (
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-126px)] overflow-y-scroll">
+        <section className="bg-yellow-500 h-[calc(100vh-130px)] overflow-y-scroll">
           <Bookstore setScreen={ setScreen }/>
         </section>
       </div>  

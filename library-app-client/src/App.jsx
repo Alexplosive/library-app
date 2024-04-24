@@ -1,22 +1,13 @@
 import "./App.css";
-import axios from "axios";
 import { useState } from "react";
 import Navbar from "./views/Navbar";
-import Bookstore from "./views/Bookstore";
+import Bookstore from "./views/Book/Bookstore";
+import AddBook from "./views/Book/AddBook";
 
 function App() {
-  const [screen, setScreen] = useState('home');
+  const [screen, setScreen] = useState('HOME');
 
-  // function getDataFromServer() {
-  //   axios
-  //     .get('/api/v1/books')
-  //     .then((res) => setData(res.data[0].author))
-  //     .catch((err) => {
-  //       console.error(err);
-  //     });
-  // }
-
-  if (screen === 'home'){
+  if (screen === 'HOME'){
     return (
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen } />
@@ -27,34 +18,45 @@ function App() {
     );
   }
   
-  if(screen === 'books'){
+  if(screen === 'BOOKS'){
     return (
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-126px)] overflow-y-scroll">
-          <Bookstore />
+          <Bookstore setScreen={ setScreen }/>
         </section>
       </div>  
     )
   }
 
-  if (screen === 'articles') {
+  if (screen === 'ARTICLES') {
     return(
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p>Aticles not implemented</p>
+          <p>Articles not implemented</p>
         </section>
       </div>  
     )
   }
 
-  if (screen === 'papers') {
+  if (screen === 'PAPERS') {
     return(
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-126px)]">
           <p>Papers not implemented!</p>
+        </section>
+      </div>  
+    )
+  }
+
+  if (screen === 'ADD-BOOK'){
+    return(
+      <div className="m-0 h-full">
+        <Navbar setScreen={ setScreen }/>
+        <section className="bg-green-400 h-[calc(100vh-126px)]">
+          <AddBook />
         </section>
       </div>  
     )

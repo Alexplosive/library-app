@@ -1,4 +1,12 @@
+import axios from "axios";
+
 function Book ({ book }) {
+  function deleteBook(){
+    axios.delete(`/api/v1/books/delete/${book.title}`).
+      then((response) => { console.log(response.status, response.data.token) 
+    })
+  }
+
   if (book){
     return(
       <section className="border border-current">
@@ -8,6 +16,7 @@ function Book ({ book }) {
         <p>Language : {book.language} </p>
         <p>Pages : {book.pages} </p>
         <p>Publication : {book.year} </p>
+        <p onClick={deleteBook} className="text-red-600 cursor-pointer">DELETE</p>
       </section>
     )
   }

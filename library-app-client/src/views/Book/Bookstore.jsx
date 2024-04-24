@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Book from "./Book";
 
-function Bookstore () {
+function Bookstore ({ setScreen }) {
   const [books, setBooks] = useState([]);
 
   function getDataFromServer() {
@@ -18,7 +18,7 @@ function Bookstore () {
     getDataFromServer();
   }, []);
 
-  let allBooks = undefined
+  let allBooks = undefined;
   
   if (books.length > 0){
     allBooks = books.map((book) => {
@@ -28,6 +28,9 @@ function Bookstore () {
 
   return (
     <div>
+      <nav>
+        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="bg-blue-600 text-center border border-current cursor-pointer hover:bg-blue-800 sticky w-full">Add Book</h3>
+      </nav>
       <p>{allBooks}</p>
     </div>
   )

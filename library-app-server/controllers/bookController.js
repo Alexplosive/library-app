@@ -59,7 +59,7 @@ module.exports.deleteBook = (req, res) => {
     try{
         const name = req.params.name
         const index = catalogue.books.findIndex((book) => book.title === name)
-        if (index < 1){
+        if (index < 0){
             res.status(400)
             res.json({ status : 'no book found' })
             return

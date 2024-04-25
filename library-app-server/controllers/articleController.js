@@ -31,7 +31,7 @@ module.exports.updateArticle = (req, res) => {
         const index = catalogue.articles.findIndex((article) => article.id == id)
 
         const updatedArticle = {
-          id: req.body.id, 
+          id: id, 
           title: req.body.title,
           description: req.body.description,
         }

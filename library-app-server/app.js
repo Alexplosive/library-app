@@ -13,7 +13,8 @@ const bookRoute = require('./routes/bookRoute')
 app.use('/api/v1/books', bookRoute)
 
 //article routes
-
+const articleRoute = require('./routes/articleRoute')
+app.use('/api/v1/articles', articleRoute)
 
 //papers routes
 

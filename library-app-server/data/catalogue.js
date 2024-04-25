@@ -1,22 +1,27 @@
 module.exports = {
     articles: [
         {
+          "id": 0,
           "title": "Job shadowing sparks students' career potential",
           "description": "Job shadow program connects record number of students with potential employers, and helps alumni give back."
         },
         {
+          "id": 1,
           "title": "Breaking down barriers, leading equality",
           "description": "Fourth-year medical student encourages openness, involvement for LGBTQ community on campus."
         },
         {
+          "id": 2,
           "title": "Surge in designer drugs, tainted 'E' poses lethal risks",
           "description": "With up to 10 new designer drugs flooding streets every year, more education is needed to convey risks, especially among youth, say UAlberta researchers."
         },
         {
+          "id": 3,
           "title": "UAlberta set to bask in a rainbow of pride",
           "description": "Beginning Feb. 26, Pride Week celebrates an often invisible campus population."
         },
         {
+          "id": 4,
           "title": "Crowding around campus projects",
           "description": "U of A looks to crowdfunding to help launch first Alberta-made satellite, support other campus projects."
         }

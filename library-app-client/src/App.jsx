@@ -11,7 +11,7 @@ function App() {
   if (screen === 'HOME'){
     return (
       <div className="h-full bg-yellow-500">
-        <Home setScreen={setScreen} />
+        <Home setScreen={ setScreen } />
       </div>
     );
   }

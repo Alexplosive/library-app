@@ -17,6 +17,7 @@ const articleRoute = require('./routes/articleRoute')
 app.use('/api/v1/articles', articleRoute)
 
 //papers routes
-
+const paperRoute = require('./routes/paperRoute')
+app.use('/api/v1/papers', paperRoute)
 
 module.exports = app

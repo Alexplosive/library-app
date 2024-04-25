@@ -912,8 +912,16 @@ module.exports = {
       ],
     papers: [
         {
-            name : 'study',
-            progress : 'complete'
-        }
+            "id": 0,
+            "title": "This is research",
+            "research_topic": "Science",
+            "description": "I can't find mock data"
+        },
+        {
+          "id": 1,
+          "title": "This is another research",
+          "research_topic": "Math",
+          "description": "I can't find mock data still"
+      }
     ]
 };

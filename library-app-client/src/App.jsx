@@ -4,6 +4,7 @@ import Navbar from "./views/Navbar";
 import Bookstore from "./views/Book/Bookstore";
 import AddBook from "./views/Book/AddBook";
 import Home from "./views/Home";
+import Articlestore from "./views/Article/Articlestore";
 
 function App() {
   const [screen, setScreen] = useState('HOME');
@@ -32,7 +33,7 @@ function App() {
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-126px)]">
-          <p>Articles not implemented</p>
+          <Articlestore setScreen={ setScreen } />
         </section>
       </div>  
     )

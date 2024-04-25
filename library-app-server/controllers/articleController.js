@@ -52,7 +52,6 @@ module.exports.deleteArticle = (req, res) => {
     try{
         const id = req.params.id
         const index = catalogue.articles.findIndex((article) => article.id == id)
-        console.log(index)
 
         if (index < 0){
             res.status(400)

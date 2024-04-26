@@ -1,7 +1,8 @@
 # To start the app stay in root library-app:
 
 ```
-npm start
+# npm start
+go to http://localhost:3000
 ```
 
 ## Users

@@ -14,8 +14,8 @@ function Signup ({ setScreen }) {
 
   return(
     <form onSubmit={handleSubmit} className="flex flex-col items-center">
-      <input className="flex-1 w-40 rounded" placeholder="Title" type="text"></input>
-      <input className="flex-1 w-40 rounded" placeholder="Research Topic" type="text"></input>
+      <input className="flex-1 w-40 rounded" placeholder="Username" type="text"></input>
+      <input className="flex-1 w-40 rounded" placeholder="Password" type="password"></input>
       <select className="flex-1 w-40 rounded" placeholder="Description" type="text">
         <option value="Owner">Owner</option>
         <option value="Employee">Employee</option>

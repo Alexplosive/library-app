@@ -44,7 +44,7 @@ function App() {
         <Navbar setScreen={ setScreen } user={ user }  setUser={ setUser } />
         <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Article</h3>
         <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
-          <Articlestore setScreen={ setScreen } />
+          <Articlestore setScreen={ setScreen } user={ user }/>
         </section>
         <footer>
           <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
@@ -59,7 +59,7 @@ function App() {
         <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
         <h3 onClick={() => { setScreen('ADD-BOOK') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Paper</h3>
         <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
-          <Paperstore setScreen={ setScreen } />
+          <Paperstore setScreen={ setScreen } user={ user }/>
         </section>
         <footer>
           <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>

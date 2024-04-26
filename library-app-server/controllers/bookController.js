@@ -96,3 +96,24 @@ module.exports.reserveBook = (req, res) => {
         console.error(err)
     }
 }
+
+module.exports.searchBook = (req, res) => {
+    try{
+        const search = req.params.search
+        const results = catalogue.books.map((book) => {
+            if(book.title.includes(search)){
+                return book
+            }
+        })
+
+        if (results < 0){
+            res.status(400)
+            res.json({ status: 'No book found '})
+        }
+
+        res.status(200)
+        res.json(results)
+    } catch (err) {
+        console.error(err)
+    }
+}

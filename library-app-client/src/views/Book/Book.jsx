@@ -45,6 +45,17 @@ function Book ({ book, user, setScreen }) {
     }).then(() => setUpdateForm(undefined));
   }; 
 
+  let options = ""
+
+  if(user && user.role === 'Employee'){
+    options = (<section className="flex justify-center m-7"><p onClick={reserveBook} className="text-green-700 cursor-pointer px-2">RESERVE</p>
+                <p onClick={updateBook} className="text-blue-600 cursor-pointer px-2">UPDATE</p></section>)
+  } else if(user && user.role === 'Owner'){
+    options = (<section className="flex justify-center m-7"><p onClick={reserveBook} className="text-green-700 cursor-pointer px-2">RESERVE</p>
+    <p onClick={updateBook} className="text-blue-600 cursor-pointer px-2">UPDATE</p>
+    <p onClick={deleteBook} className="text-red-600 cursor-pointer px-2">DELETE</p></section>)
+  }
+
   if (updateForm){
     return updateForm;
   }
@@ -59,11 +70,7 @@ function Book ({ book, user, setScreen }) {
         <p>Pages : {book.pages} </p>
         <p>Publication : {book.year} </p>
       </section>
-      <section className="flex justify-center m-7">
-        <p onClick={reserveBook} className="text-green-700 cursor-pointer px-2">RESERVE</p>
-        <p onClick={updateBook} className="text-blue-600 cursor-pointer px-2">UPDATE</p>
-        <p onClick={deleteBook} className="text-red-600 cursor-pointer px-2">DELETE</p>
-      </section>
+      {options}
     </section>
   )
 }

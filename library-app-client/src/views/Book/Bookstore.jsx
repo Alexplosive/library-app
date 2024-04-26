@@ -18,11 +18,23 @@ function Bookstore ({ setScreen, user }) {
     getBooks();
   }, []);
 
+  function searchBook(e){
+    e.preventDefault()
+    if (e.target[0].value !== ""){
+      axios.get(`/api/v1/books/search/${e.target[0].value}`).
+        then((response) => setBooks(response.data))
+    } else {
+      getBooks()
+    }
+  }
+
   let allBooks = undefined;
   
   if (books.length > 0){
     allBooks = books.map((book) => {
-      return <Book book={book} key={book.title} setScreen={ setScreen } user={ user } />
+      if(book){
+        return <Book book={book} key={book.title} setScreen={ setScreen } user={ user } />
+      }
     })
   } else {
     return (
@@ -35,6 +47,10 @@ function Bookstore ({ setScreen, user }) {
 
   return (
     <div className="w-full flex flex-col items-center">
+      <form onSubmit={searchBook}>
+        <input></input>
+        <button className="bg-purple-600" type="submit">Search!</button>
+      </form>
       {allBooks}
     </div>
   )

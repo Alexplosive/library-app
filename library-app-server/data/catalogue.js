@@ -2,13 +2,13 @@ module.exports.catalogue = {
     articles: [
         {
           "id": 0,
-          "title": "Job shadowing sparks students' career potential",
-          "description": "Job shadow program connects record number of students with potential employers, and helps alumni give back."
+          "title": "29 Olympics, no medals? No problem. Quebec-led fencing squad hungry for history",
+          "description": 'François Cauchon has had a lot on his plate recently — all of it good. He just graduated from McGill University with a degree in finance. He also just found out that he\'ll be headed to Paris this summer for the 2024 Olympic Games. Oh, and today\'s his birthday. "It was a surreal feeling honestly," said Cauchon, who just turned 24. "I think that for every amateur and professional athlete, the Olympics is the holy grail of sports." Cauchon is among 14 fencers that will represent Canada in Paris — the country\'s largest Olympic fencing team since 1988. The Montrealer is also one of five Quebecers on the squad. Canadian fencers will compete in five events, a mix of singles and teams formats.'
         },
         {
           "id": 1,
-          "title": "Breaking down barriers, leading equality",
-          "description": "Fourth-year medical student encourages openness, involvement for LGBTQ community on campus."
+          "title": "Quebec's first provincial contact football league for girls is kicking off this weekend.",
+          "description": "It's a big weekend for teenaged girls football players. This weekend marks the inaugural season for Quebec Women's Minor Football League. The players are 15, 16 and 17 year-old-girls and are from Laval, Montreal, the South and North Shore, and Gatineau. For one family, it's about the love of the game and so much more. We spoke with a Julia Guitard and her mom Karine Tougas. Julia Guitard is 16 years old and will be playing in this upcoming league. Karine Tougas is the president of the Quebec Women's Minor Football. She plays football in an adult league."
         },
         {
           "id": 2,
@@ -17,8 +17,8 @@ module.exports.catalogue = {
         },
         {
           "id": 3,
-          "title": "UAlberta set to bask in a rainbow of pride",
-          "description": "Beginning Feb. 26, Pride Week celebrates an often invisible campus population."
+          "title": "Does the SAQ’s monopoly on alcohol still make sense?",
+          "description": "While some are calling on Quebec to follow other provinces in liberalizing their rules for alcohol sales, the government has some clear incentives to maintain the status quo. "
         },
         {
           "id": 4,
@@ -1029,5 +1029,10 @@ module.exports.users = [
     username: "Alex",
     password: "secure",
     role: "Owner"
+  },
+  {
+    username: "emp",
+    password: "emp",
+    role: "Employee"
   }
 ]

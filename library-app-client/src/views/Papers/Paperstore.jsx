@@ -2,7 +2,7 @@ import Paper from "./Paper";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-function Paperstore({ setScreen }){
+function Paperstore({ setScreen, user }){
   const [papers, setPapers] = useState([]);
 
   function getPapers() {
@@ -22,7 +22,7 @@ function Paperstore({ setScreen }){
   
   if (papers.length > 0){
     allPapers = papers.map((paper) => {
-      return <Paper paper={paper} key={paper.id} />
+      return <Paper paper={paper} key={paper.id} user={user} />
     })
   } else {
     return (

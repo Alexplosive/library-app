@@ -2,7 +2,7 @@ import Article from "./Article";
 import { useState, useEffect } from "react";
 import axios from "axios";
 
-function Articlestore({ setScreen }){
+function Articlestore({ setScreen, user }){
   const [articles, setArticles] = useState([]);
 
   function getArticles() {
@@ -22,7 +22,7 @@ function Articlestore({ setScreen }){
   
   if (articles.length > 0){
     allArticles = articles.map((article) => {
-      return <Article article={article} key={article.id} />
+      return <Article article={article} key={article.id} user={ user } />
     })
   } else {
     return (

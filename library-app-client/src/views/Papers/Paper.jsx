@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-function Paper ({ paper }) {
+function Paper ({ paper, user }) {
   const [updateForm, setUpdateForm] = useState(undefined);
 
   function deletePaper(){
@@ -31,6 +31,17 @@ function Paper ({ paper }) {
     }).then(() => setUpdateForm(undefined));
   }; 
 
+  let options = ""
+
+  if(user && user.role === 'Employee'){
+    options = (<section className="flex justify-center m-7">
+                <p onClick={updatePaper} className="text-blue-600 cursor-pointer px-2">UPDATE</p></section>)
+  } else if(user && user.role === 'Owner'){
+    options = (<section className="flex justify-center m-7">
+    <p onClick={updatePaper} className="text-blue-600 cursor-pointer px-2">UPDATE</p>
+    <p onClick={deletePaper} className="text-red-600 cursor-pointer px-2">DELETE</p></section>)
+  }
+
   if (updateForm){
     return updateForm;
   }
@@ -40,8 +51,7 @@ function Paper ({ paper }) {
       <p className="text-center font-bold">{paper.research_topic} </p>
       <p className="text-center">{paper.description} </p>
       <section className="flex">
-        <p onClick={updatePaper} className="text-blue-600 cursor-pointer">UPDATE</p>
-        <p onClick={deletePaper} className="text-red-600 cursor-pointer">DELETE</p>
+        {options}
       </section>
     </section>
   )

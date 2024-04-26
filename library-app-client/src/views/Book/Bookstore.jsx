@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Book from "./Book";
 
-function Bookstore ({ setScreen }) {
+function Bookstore ({ setScreen, user }) {
   const [books, setBooks] = useState([]);
 
   function getBooks() {
@@ -22,7 +22,7 @@ function Bookstore ({ setScreen }) {
   
   if (books.length > 0){
     allBooks = books.map((book) => {
-      return <Book book={book} key={book.title} setScreen={ setScreen } />
+      return <Book book={book} key={book.title} setScreen={ setScreen } user={ user } />
     })
   } else {
     return (

@@ -1,6 +1,6 @@
 import axios from "axios";
 
-function Login ({ setScreen }) {
+function Login ({ setScreen, setUser }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const userData = {
@@ -8,7 +8,7 @@ function Login ({ setScreen }) {
       password: e.target[1].value,
     };
     axios.post('/api/v1/users/login', userData).
-      then((response) => { console.log(response.status, response.data.token) }).then(() => { setScreen('HOME')})
+      then((response) => { setUser(response.data.user) }).then(() => { setScreen('HOME')})
   };
 
   return(

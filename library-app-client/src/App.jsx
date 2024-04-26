@@ -13,6 +13,7 @@ import Signup from "./views/User/Signup";
 
 function App() {
   const [screen, setScreen] = useState('HOME');
+  const [user, setUser] = useState(undefined)
 
   if (screen === 'HOME'){
     return (
@@ -28,7 +29,7 @@ function App() {
         <Navbar setScreen={ setScreen }/>
         <h3 onClick={() => { setScreen('ADD-BOOK') }} className="bg-purple-600 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-full">Add Book</h3>
         <section className="bg-current h-[calc(100vh-148.5px)] overflow-y-scroll">
-          <Bookstore setScreen={ setScreen }/>
+          <Bookstore setScreen={ setScreen } user={ user } />
         </section>
         <footer>
           <h1 onClick={() => {setScreen('HOME')}} className="font-bold bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
@@ -114,7 +115,7 @@ function App() {
       <div className="m-0 h-full">
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-130px)]">
-          <Login setScreen={ setScreen } />
+          <Login setScreen={ setScreen } setUser={ setUser } />
         </section>
       </div>  
     )

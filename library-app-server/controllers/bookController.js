@@ -88,10 +88,10 @@ module.exports.reserveBook = (req, res) => {
             return
         }
 
-        catalogue.books[index].reserved = true
+        catalogue.books[index].reserved = req.body.username
 
         res.status(200)
-        res.json({ status: 'book reserved' })
+        res.json({ status: `book reserved by ${req.body.username}` })
     } catch (err){
         console.error(err)
     }

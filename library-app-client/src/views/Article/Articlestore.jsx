@@ -27,8 +27,7 @@ function Articlestore({ setScreen, user }){
   } else {
     return (
       <section className="flex-col h-full">
-        <p className="text-center">No Articles</p>
-        <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="font-bold underline cursor-pointer text-xl text-center">Add the first article</h3>
+        <p className="text-center text-white text-3xl">No Articles</p>
       </section>
     )
   }

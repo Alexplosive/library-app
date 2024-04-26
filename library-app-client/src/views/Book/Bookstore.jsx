@@ -39,8 +39,7 @@ function Bookstore ({ setScreen, user}) {
   } else {
     return (
       <section className="flex-col h-full">
-        <p className="text-center text-white">No Books</p>
-        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="font-bold underline cursor-pointer text-xl text-center">Add the first book</h3>
+        <p className="text-center text-white text-3xl">No Books</p>
       </section>
     )
   }

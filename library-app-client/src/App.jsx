@@ -22,12 +22,22 @@ function App() {
       </div>
     );
   }
+
+  let bookAdd = ""
+  let articleAdd = ""
+  let paperAdd = ""
+
+  if(user){
+    bookAdd = <h3 onClick={() => { setScreen('ADD-BOOK') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Book</h3>     
+    articleAdd = <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Article</h3>
+    paperAdd = <h3 onClick={() => { setScreen('ADD-PAPER') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Paper</h3>
+  }
   
   if(screen === 'BOOKS'){
     return (
       <div className="m-0 overflow-hidden">
         <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
-        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Book</h3>
+        {bookAdd}
         <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Bookstore setScreen={ setScreen } user={ user } />
         </section>
@@ -42,7 +52,7 @@ function App() {
     return(
       <div className="m-0 overflow-hidden">
         <Navbar setScreen={ setScreen } user={ user }  setUser={ setUser } />
-        <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Article</h3>
+        {articleAdd}
         <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Articlestore setScreen={ setScreen } user={ user }/>
         </section>
@@ -57,7 +67,7 @@ function App() {
     return(
       <div className="m-0 overflow-hidden">
         <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
-        <h3 onClick={() => { setScreen('ADD-PAPER') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Paper</h3>
+        {paperAdd}
         <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Paperstore setScreen={ setScreen } user={ user }/>
         </section>

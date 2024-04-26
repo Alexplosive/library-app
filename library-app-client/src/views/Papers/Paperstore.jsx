@@ -27,8 +27,7 @@ function Paperstore({ setScreen, user }){
   } else {
     return (
       <section className="flex-col h-full">
-        <p className="text-center">No Papers</p>
-        <h3 onClick={() => { setScreen('ADD-PAPER') }} className="font-bold underline cursor-pointer text-xl text-center">Add the first paper</h3>
+        <p className="text-center text-white text-3xl">No Papers</p>
       </section>
     )
   }

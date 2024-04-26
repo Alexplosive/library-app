@@ -1,6 +1,11 @@
 import axios from "axios";
+import { useAtom } from "jotai";
+import * as state from "../../state"
+import { Link } from "react-router-dom";
 
-function Login ({ setScreen, setUser }) {
+function Login () {
+  const [user, setUser] = useAtom(state.user)
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const userData = {
@@ -8,7 +13,7 @@ function Login ({ setScreen, setUser }) {
       password: e.target[1].value,
     };
     axios.post('/api/v1/users/login', userData).
-      then((response) => { setUser(response.data.user) }).then(() => { setScreen('HOME')})
+      then((response) => { setUser(response.data.user) }).then(() => console.log(user))
   };
 
   return(

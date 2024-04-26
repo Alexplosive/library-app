@@ -1,4 +1,9 @@
-function Navbar({ setScreen, user, setUser }) {
+import { useAtom } from "jotai"
+import * as state from '../state'
+import { Link } from "react-router-dom"
+
+function Navbar() {
+  const [user, setUser] = useAtom(state.user)
 
   if(user){
     return(
@@ -17,8 +22,8 @@ function Navbar({ setScreen, user, setUser }) {
   return (
     <div className="h-max m-5">
       <header className="flex justify-items-center gap-0">
-        <h1 onClick={() => setScreen('SIGNUP')} className="text-2xl font-bold rounded-3xl bg-purple-600 hover:bg-purple-800 flex-1 border border-current p-3 m-0 text-center cursor-pointer">Signup</h1>
-        <h1 onClick={() => setScreen('LOGIN')} className="text-2xl font-bold rounded-3xl bg-purple-600 hover:bg-purple-800 flex-1 border border-current p-3 m-0 text-center cursor-pointer">Login</h1>
+        <Link to={'signup'} className="text-2xl font-bold rounded-3xl bg-purple-600 hover:bg-purple-800 flex-1 border border-current p-3 m-0 text-center cursor-pointer"><h1>Signup</h1></Link>
+        <Link to={'/login'} className="text-2xl font-bold rounded-3xl bg-purple-600 hover:bg-purple-800 flex-1 border border-current p-3 m-0 text-center cursor-pointer"><h1>Login</h1></Link>
       </header>
       <nav className="flex justify-items-center gap-0 m-5">
         <h2 onClick={() => {setScreen('BOOKS') }} className="text-2xl font-bold rounded-3xl bg-purple-600 hover:bg-purple-800 flex-1 border border-current p-3 m-0 text-center cursor-pointer">Books</h2>

@@ -8,6 +8,8 @@ import Articlestore from "./views/Article/Articlestore";
 import AddArticle from "./views/Article/AddArticle";
 import Paperstore from "./views/Papers/Paperstore";
 import AddPaper from "./views/Papers/AddPaper";
+import Login from "./views/User/Login";
+import Signup from "./views/User/Signup";
 
 function App() {
   const [screen, setScreen] = useState('HOME');
@@ -91,6 +93,28 @@ function App() {
         <Navbar setScreen={ setScreen }/>
         <section className="bg-green-400 h-[calc(100vh-130px)]">
           <AddPaper setScreen={ setScreen } />
+        </section>
+      </div>  
+    )
+  }
+
+  if (screen === 'SIGNUP'){
+    return(
+      <div className="m-0 h-full">
+        <Navbar setScreen={ setScreen }/>
+        <section className="bg-green-400 h-[calc(100vh-130px)]">
+          <Signup setScreen={ setScreen } />
+        </section>
+      </div>  
+    )
+  }
+
+  if (screen === 'LOGIN'){
+    return(
+      <div className="m-0 h-full">
+        <Navbar setScreen={ setScreen }/>
+        <section className="bg-green-400 h-[calc(100vh-130px)]">
+          <Login setScreen={ setScreen } />
         </section>
       </div>  
     )

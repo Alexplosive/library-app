@@ -1,4 +1,4 @@
-const catalogue = require('../data/catalogue')
+const { catalogue } = require('../data/catalogue')
 
 module.exports.getAllPapers = (req, res) => {
     res.status(200)

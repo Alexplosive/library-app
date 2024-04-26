@@ -1,5 +1,4 @@
-function Navbar({ setScreen, user, setUser }) {
-
+function Navbar({ setScreen, setUser, user }) {
   if(user){
     return(
       <div className="h-max m-10">

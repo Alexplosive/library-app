@@ -1,8 +1,8 @@
-import axios from "axios";
+import axios, { all } from "axios";
 import { useEffect, useState } from "react";
 import Book from "./Book";
 
-function Bookstore ({ setScreen, user }) {
+function Bookstore ({ setScreen, user}) {
   const [books, setBooks] = useState([]);
 
   function getBooks() {
@@ -39,7 +39,7 @@ function Bookstore ({ setScreen, user }) {
   } else {
     return (
       <section className="flex-col h-full">
-        <p className="text-center">No Books</p>
+        <p className="text-center text-white">No Books</p>
         <h3 onClick={() => { setScreen('ADD-BOOK') }} className="font-bold underline cursor-pointer text-xl text-center">Add the first book</h3>
       </section>
     )

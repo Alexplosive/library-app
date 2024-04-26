@@ -4,7 +4,6 @@ import Book from "./Book";
 
 function Bookstore ({ setScreen }) {
   const [books, setBooks] = useState([]);
-  const [reload, setReload] = useState(false);
 
   function getBooks() {
     axios
@@ -17,26 +16,25 @@ function Bookstore ({ setScreen }) {
 
   useEffect(() => {
     getBooks();
-    setReload(false);
-  }, [reload]);
+  }, []);
 
   let allBooks = undefined;
   
   if (books.length > 0){
     allBooks = books.map((book) => {
-      return <Book book={book} setReload={setReload} key={book.title} />
+      return <Book book={book} key={book.title} setScreen={ setScreen } />
     })
   } else {
     return (
-      <p>Books Loading...</p>
+      <section className="flex-col h-full">
+        <p className="text-center">No Books</p>
+        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="font-bold underline cursor-pointer text-xl text-center">Add the first book</h3>
+      </section>
     )
   }
 
   return (
     <div className="w-full flex flex-col items-center">
-      <nav className="w-full">
-        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="bg-blue-600 text-center border border-current cursor-pointer hover:bg-blue-800 sticky w-full">Add Book</h3>
-      </nav>
       {allBooks}
     </div>
   )

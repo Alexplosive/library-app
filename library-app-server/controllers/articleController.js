@@ -7,10 +7,20 @@ module.exports.getAllArticles = (req, res) => {
 
 module.exports.addArticle = (req, res) => {
     try {
-        const newArticle = {
-          id: catalogue.articles[catalogue.articles.length - 1].id + 1,
-          title: req.body.title,
-          description: req.body.description
+        const length = catalogue.articles.length;
+        let newArticle = undefined;
+        if(length !== 0){
+            newArticle = {
+              id: catalogue.articles[catalogue.articles.length - 1].id + 1,
+              title: req.body.title,
+              description: req.body.description
+            }
+        } else {
+            newArticle = {
+                id: 0,
+                title: req.body.title,
+                description: req.body.description
+              }
         }
 
         catalogue.articles.push(newArticle)

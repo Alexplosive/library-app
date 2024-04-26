@@ -4,7 +4,6 @@ import axios from "axios";
 
 function Articlestore({ setScreen }){
   const [articles, setArticles] = useState([]);
-  const [reload, setReload] = useState(false);
 
   function getArticles() {
     axios
@@ -17,27 +16,31 @@ function Articlestore({ setScreen }){
 
   useEffect(() => {
     getArticles();
-    setReload(false);
-  }, [reload]);
+  }, []);
 
   let allArticles = undefined;
   
   if (articles.length > 0){
     allArticles = articles.map((article) => {
-      return <Article article={article} setReload={setReload} key={article.id} />
+      return <Article article={article} key={article.id} />
     })
   } else {
     return (
-      <p>Articles Loading...</p>
+      <section className="flex-col h-full">
+        <p className="text-center">No Articles</p>
+        <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="font-bold underline cursor-pointer text-xl text-center">Add the first article</h3>
+      </section>
     )
   }
 
   return (
-    <div className="w-full flex flex-col items-center">
+    <div className="w-full items-center h-full">
       <nav className="w-full">
-        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="bg-blue-600 text-center border border-current cursor-pointer hover:bg-blue-800 sticky w-full">Add Book</h3>
+        <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="bg-purple-600 text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-full">Add Article</h3>
       </nav>
-      {allArticles}
+      <section className="h-1/2 grid grid-cols-3 m-10">
+        {allArticles} 
+      </section>
     </div>
   )
 }

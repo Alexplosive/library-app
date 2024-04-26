@@ -16,7 +16,7 @@ function Home({ setScreen }) {
         <section className="flex-1 m-5 border border-current rounded-xl h-full bg-gray-300">
           <h3 className="pt-2 text-center underline">Papers</h3>
           <h4 className="p-5 text-center">Here is our special collection of papers that are available. Our collection holds many different papers that can be search through in our database. Find a paper you like and enjoy your research! </h4>
-          <h6 onClick={() => setScreen('ARTICLES')} className="p-10 text-center font-bold underline cursor-pointer">Click here to access the article database</h6>
+          <h6 onClick={() => setScreen('PAPERS')} className="p-10 text-center font-bold underline cursor-pointer">Click here to access the article database</h6>
         </section>
       </section>
     </section>

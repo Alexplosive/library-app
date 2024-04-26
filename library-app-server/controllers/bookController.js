@@ -1,4 +1,4 @@
-const catalogue = require('../data/catalogue')
+const { catalogue } = require('../data/catalogue')
 
 module.exports.getAllBooks = (req, res) => {
     res.status(200)
@@ -74,5 +74,25 @@ module.exports.deleteBook = (req, res) => {
         res.json({ status: `deleted book` })
     } catch(err) {
         console.log(err)
+    }
+}
+
+module.exports.reserveBook = (req, res) => {
+    try{
+        const id = req.params.id
+        const index = catalogue.books.findIndex((book) => book.id == id)
+
+        if (index < 0) {
+            res.status(400)
+            res.json({ status: 'no book found' })
+            return
+        }
+
+        catalogue.books[index].reserved = true
+
+        res.status(200)
+        res.json({ status: 'book reserved' })
+    } catch (err){
+        console.error(err)
     }
 }

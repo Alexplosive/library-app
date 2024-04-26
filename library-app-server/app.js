@@ -20,4 +20,8 @@ app.use('/api/v1/articles', articleRoute)
 const paperRoute = require('./routes/paperRoute')
 app.use('/api/v1/papers', paperRoute)
 
+//user route
+const userRoute = require('./routes/userRoute')
+app.use('/api/v1/users', userRoute)
+
 module.exports = app

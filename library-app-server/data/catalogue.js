@@ -1,4 +1,4 @@
-module.exports = {
+module.exports.catalogue = {
     articles: [
         {
           "id": 0,
@@ -34,7 +34,8 @@ module.exports = {
           "language": "English",
           "pages": 209,
           "title": "Things Fall Apart",
-          "year": 1958
+          "year": 1958,
+          "reserved": null
         },
         {
           "id": 1,
@@ -43,7 +44,8 @@ module.exports = {
           "language": "Danish",
           "pages": 784,
           "title": "Fairy tales",
-          "year": 1836
+          "year": 1836,
+          "reserved": null
         },
         {
           "id": 2,
@@ -52,7 +54,8 @@ module.exports = {
           "language": "Italian",
           "pages": 928,
           "title": "The Divine Comedy",
-          "year": 1315
+          "year": 1315,
+          "reserved": null
         },
         {
           "id": 3,
@@ -61,7 +64,8 @@ module.exports = {
           "language": "Akkadian",
           "pages": 160,
           "title": "The Epic Of Gilgamesh",
-          "year": -1700
+          "year": -1700,
+          "reserved": null
         },
         {
           "id": 4,
@@ -70,7 +74,8 @@ module.exports = {
           "language": "Hebrew",
           "pages": 176,
           "title": "The Book Of Job",
-          "year": -600
+          "year": -600,
+          "reserved": null
         },
         {
           "id": 5,
@@ -79,7 +84,8 @@ module.exports = {
           "language": "Arabic",
           "pages": 288,
           "title": "One Thousand and One Nights",
-          "year": 1200
+          "year": 1200,
+          "reserved": null
         },
         {
           "id": 6,
@@ -88,7 +94,8 @@ module.exports = {
           "language": "Old Norse",
           "pages": 384,
           "title": "Nj\u00e1l's Saga",
-          "year": 1350
+          "year": 1350,
+          "reserved": null
         },
         {
           "id": 7,
@@ -97,7 +104,8 @@ module.exports = {
           "language": "English",
           "pages": 226,
           "title": "Pride and Prejudice",
-          "year": 1813
+          "year": 1813,
+          "reserved": null
         },
         {
           "id": 8,
@@ -106,7 +114,8 @@ module.exports = {
           "language": "French",
           "pages": 443,
           "title": "Le P\u00e8re Goriot",
-          "year": 1835
+          "year": 1835,
+          "reserved": null
         },
         {
           "id": 9,
@@ -115,7 +124,8 @@ module.exports = {
           "language": "French, English",
           "pages": 256,
           "title": "Molloy, Malone Dies, The Unnamable, the trilogy",
-          "year": 1952
+          "year": 1952,
+          "reserved": null
         },
         {
           "id": 10,
@@ -124,7 +134,8 @@ module.exports = {
           "language": "Italian",
           "pages": 1024,
           "title": "The Decameron",
-          "year": 1351
+          "year": 1351,
+          "reserved": null
         },
         {
           "id": 11,
@@ -133,7 +144,8 @@ module.exports = {
           "language": "Spanish",
           "pages": 224,
           "title": "Ficciones",
-          "year": 1965
+          "year": 1965,
+          "reserved": null
         },
         {
           "id": 12,
@@ -142,7 +154,8 @@ module.exports = {
           "language": "English",
           "pages": 342,
           "title": "Wuthering Heights",
-          "year": 1847
+          "year": 1847,
+          "reserved": null
         },
         {
           "id": 13,
@@ -151,7 +164,8 @@ module.exports = {
           "language": "French",
           "pages": 185,
           "title": "The Stranger",
-          "year": 1942
+          "year": 1942,
+          "reserved": null
         },
         {
           "id": 14,
@@ -160,7 +174,8 @@ module.exports = {
           "language": "French",
           "pages": 505,
           "title": "Journey to the End of the Night",
-          "year": 1932
+          "year": 1932,
+          "reserved": null
         },
         {
           "id": 15,
@@ -169,7 +184,8 @@ module.exports = {
           "language": "Spanish",
           "pages": 1056,
           "title": "Don Quijote De La Mancha",
-          "year": 1610
+          "year": 1610,
+          "reserved": null
         },
         {
           "id": 16,
@@ -178,7 +194,8 @@ module.exports = {
           "language": "English",
           "pages": 544,
           "title": "The Canterbury Tales",
-          "year": 1450
+          "year": 1450,
+          "reserved": null
         },
         {
           "id": 17,
@@ -187,7 +204,8 @@ module.exports = {
           "language": "English",
           "pages": 320,
           "title": "Nostromo",
-          "year": 1904
+          "year": 1904,
+          "reserved": null
         },
         {
           "id": 18,
@@ -196,7 +214,8 @@ module.exports = {
           "language": "English",
           "pages": 194,
           "title": "Great Expectations",
-          "year": 1861
+          "year": 1861,
+          "reserved": null
         },
         {
           "id": 19,
@@ -205,7 +224,8 @@ module.exports = {
           "language": "French",
           "pages": 596,
           "title": "Jacques the Fatalist",
-          "year": 1796
+          "year": 1796,
+          "reserved": null
         },
         {
           "id": 20,
@@ -214,7 +234,8 @@ module.exports = {
           "language": "German",
           "pages": 600,
           "title": "Berlin Alexanderplatz",
-          "year": 1929
+          "year": 1929,
+          "reserved": null
         },
         {
           "id": 21,
@@ -223,7 +244,8 @@ module.exports = {
           "language": "Russian",
           "pages": 551,
           "title": "Crime and Punishment",
-          "year": 1866
+          "year": 1866,
+          "reserved": null
         },
         {
           "id": 22,
@@ -232,7 +254,8 @@ module.exports = {
           "language": "Russian",
           "pages": 656,
           "title": "The Idiot",
-          "year": 1869
+          "year": 1869,
+          "reserved": null
         },
         {
           "id": 23,
@@ -241,7 +264,8 @@ module.exports = {
           "language": "Russian",
           "pages": 768,
           "title": "The Possessed",
-          "year": 1872
+          "year": 1872,
+          "reserved": null
         },
         {
           "id": 24,
@@ -250,7 +274,8 @@ module.exports = {
           "language": "Russian",
           "pages": 824,
           "title": "The Brothers Karamazov",
-          "year": 1880
+          "year": 1880,
+          "reserved": null
         },
         {
           "id": 25,
@@ -259,7 +284,8 @@ module.exports = {
           "language": "English",
           "pages": 800,
           "title": "Middlemarch",
-          "year": 1871
+          "year": 1871,
+          "reserved": null
         },
         {
           "id": 26,
@@ -268,7 +294,8 @@ module.exports = {
           "language": "English",
           "pages": 581,
           "title": "Invisible Man",
-          "year": 1952
+          "year": 1952,
+          "reserved": null
         },
         {
           "id": 27,
@@ -277,7 +304,8 @@ module.exports = {
           "language": "Greek",
           "pages": 104,
           "title": "Medea",
-          "year": -431
+          "year": -431,
+          "reserved": null
         },
         {
           "id": 28,
@@ -286,7 +314,8 @@ module.exports = {
           "language": "English",
           "pages": 313,
           "title": "Absalom, Absalom!",
-          "year": 1936
+          "year": 1936,
+          "reserved": null
         },
         {
           "id": 29,
@@ -295,7 +324,8 @@ module.exports = {
           "language": "English",
           "pages": 326,
           "title": "The Sound and the Fury",
-          "year": 1929
+          "year": 1929,
+          "reserved": null
         },
         {
           "id": 30,
@@ -304,7 +334,8 @@ module.exports = {
           "language": "French",
           "pages": 528,
           "title": "Madame Bovary",
-          "year": 1857
+          "year": 1857,
+          "reserved": null
         },
         {
           "id": 31,
@@ -313,7 +344,8 @@ module.exports = {
           "language": "French",
           "pages": 606,
           "title": "Sentimental Education",
-          "year": 1869
+          "year": 1869,
+          "reserved": null
         },
         {
           "id": 32,
@@ -322,7 +354,8 @@ module.exports = {
           "language": "Spanish",
           "pages": 218,
           "title": "Gypsy Ballads",
-          "year": 1928
+          "year": 1928,
+          "reserved": null
         },
         {
           "id": 33,
@@ -331,7 +364,8 @@ module.exports = {
           "language": "Spanish",
           "pages": 417,
           "title": "One Hundred Years of Solitude",
-          "year": 1967
+          "year": 1967,
+          "reserved": null
         },
         {
           "id": 34,
@@ -340,7 +374,8 @@ module.exports = {
           "language": "Spanish",
           "pages": 368,
           "title": "Love in the Time of Cholera",
-          "year": 1985
+          "year": 1985,
+          "reserved": null
         },
         {
           "id": 35,
@@ -349,7 +384,8 @@ module.exports = {
           "language": "German",
           "pages": 158,
           "title": "Faust",
-          "year": 1832
+          "year": 1832,
+          "reserved": null
         },
         {
           "id": 36,
@@ -358,7 +394,8 @@ module.exports = {
           "language": "Russian",
           "pages": 432,
           "title": "Dead Souls",
-          "year": 1842
+          "year": 1842,
+          "reserved": null
         },
         {
           "id": 37,
@@ -367,7 +404,8 @@ module.exports = {
           "language": "German",
           "pages": 600,
           "title": "The Tin Drum",
-          "year": 1959
+          "year": 1959,
+          "reserved": null
         },
         {
           "id": 38,
@@ -376,7 +414,8 @@ module.exports = {
           "language": "Portuguese",
           "pages": 494,
           "title": "The Devil to Pay in the Backlands",
-          "year": 1956
+          "year": 1956,
+          "reserved": null
         },
         {
           "id": 39,
@@ -385,7 +424,8 @@ module.exports = {
           "language": "Norwegian",
           "pages": 176,
           "title": "Hunger",
-          "year": 1890
+          "year": 1890,
+          "reserved": null
         },
         {
           "id": 40,
@@ -394,7 +434,8 @@ module.exports = {
           "language": "English",
           "pages": 128,
           "title": "The Old Man and the Sea",
-          "year": 1952
+          "year": 1952,
+          "reserved": null
         },
         {
           "id": 41,
@@ -403,7 +444,8 @@ module.exports = {
           "language": "Greek",
           "pages": 608,
           "title": "Iliad",
-          "year": -735
+          "year": -735,
+          "reserved": null
         },
         {
           "id": 42,
@@ -412,7 +454,8 @@ module.exports = {
           "language": "Greek",
           "pages": 374,
           "title": "Odyssey",
-          "year": -800
+          "year": -800,
+          "reserved": null
         },
         {
           "id": 43,
@@ -421,7 +464,8 @@ module.exports = {
           "language": "Norwegian",
           "pages": 68,
           "title": "A Doll's House",
-          "year": 1879
+          "year": 1879,
+          "reserved": null
         },
         {
           "id": 44,
@@ -430,7 +474,8 @@ module.exports = {
           "language": "English",
           "pages": 228,
           "title": "Ulysses",
-          "year": 1922
+          "year": 1922,
+          "reserved": null
         },
         {
           "id": 45,
@@ -439,7 +484,8 @@ module.exports = {
           "language": "German",
           "pages": 488,
           "title": "Stories",
-          "year": 1924
+          "year": 1924,
+          "reserved": null
         },
         {
           "id": 46,
@@ -448,7 +494,8 @@ module.exports = {
           "language": "German",
           "pages": 160,
           "title": "The Trial",
-          "year": 1925
+          "year": 1925,
+          "reserved": null
         },
         {
           "id": 47,
@@ -457,7 +504,8 @@ module.exports = {
           "language": "German",
           "pages": 352,
           "title": "The Castle",
-          "year": 1926
+          "year": 1926,
+          "reserved": null
         },
         {
           "id": 48,
@@ -466,7 +514,8 @@ module.exports = {
           "language": "Sanskrit",
           "pages": 147,
           "title": "The recognition of Shakuntala",
-          "year": 150
+          "year": 150,
+          "reserved": null
         },
         {
           "id": 49,
@@ -475,7 +524,8 @@ module.exports = {
           "language": "Japanese",
           "pages": 288,
           "title": "The Sound of the Mountain",
-          "year": 1954
+          "year": 1954,
+          "reserved": null
         },
         {
           "id": 50,
@@ -484,7 +534,8 @@ module.exports = {
           "language": "Greek",
           "pages": 368,
           "title": "Zorba the Greek",
-          "year": 1946
+          "year": 1946,
+          "reserved": null
         },
         {
           "id": 51,
@@ -493,7 +544,8 @@ module.exports = {
           "language": "English",
           "pages": 432,
           "title": "Sons and Lovers",
-          "year": 1913
+          "year": 1913,
+          "reserved": null
         },
         {
           "id": 52,
@@ -502,7 +554,8 @@ module.exports = {
           "language": "Icelandic",
           "pages": 470,
           "title": "Independent People",
-          "year": 1934
+          "year": 1934,
+          "reserved": null
         },
         {
           "id": 53,
@@ -511,7 +564,8 @@ module.exports = {
           "language": "Italian",
           "pages": 184,
           "title": "Poems",
-          "year": 1818
+          "year": 1818,
+          "reserved": null
         },
         {
           "id": 54,
@@ -520,7 +574,8 @@ module.exports = {
           "language": "English",
           "pages": 688,
           "title": "The Golden Notebook",
-          "year": 1962
+          "year": 1962,
+          "reserved": null
         },
         {
           "id": 55,
@@ -529,7 +584,8 @@ module.exports = {
           "language": "Swedish",
           "pages": 160,
           "title": "Pippi Longstocking",
-          "year": 1945
+          "year": 1945,
+          "reserved": null
         },
         {
           "id": 56,
@@ -538,7 +594,8 @@ module.exports = {
           "language": "Chinese",
           "pages": 389,
           "title": "Diary of a Madman",
-          "year": 1918
+          "year": 1918,
+          "reserved": null
         },
         {
           "id": 57,
@@ -547,7 +604,8 @@ module.exports = {
           "language": "Arabic",
           "pages": 355,
           "title": "Children of Gebelawi",
-          "year": 1959
+          "year": 1959,
+          "reserved": null
         },
         {
           "id": 58,
@@ -556,7 +614,8 @@ module.exports = {
           "language": "German",
           "pages": 736,
           "title": "Buddenbrooks",
-          "year": 1901
+          "year": 1901,
+          "reserved": null
         },
         {
           "id": 59,
@@ -565,7 +624,8 @@ module.exports = {
           "language": "German",
           "pages": 720,
           "title": "The Magic Mountain",
-          "year": 1924
+          "year": 1924,
+          "reserved": null
         },
         {
           "id": 60,
@@ -574,7 +634,8 @@ module.exports = {
           "language": "English",
           "pages": 378,
           "title": "Moby Dick",
-          "year": 1851
+          "year": 1851,
+          "reserved": null
         },
         {
           "id": 61,
@@ -583,7 +644,8 @@ module.exports = {
           "language": "French",
           "pages": 404,
           "title": "Essays",
-          "year": 1595
+          "year": 1595,
+          "reserved": null
         },
         {
           "id": 62,
@@ -592,7 +654,8 @@ module.exports = {
           "language": "Italian",
           "pages": 600,
           "title": "History",
-          "year": 1974
+          "year": 1974,
+          "reserved": null
         },
         {
           "id": 63,
@@ -601,7 +664,8 @@ module.exports = {
           "language": "English",
           "pages": 321,
           "title": "Beloved",
-          "year": 1987
+          "year": 1987,
+          "reserved": null
         },
         {
           "id": 64,
@@ -610,7 +674,8 @@ module.exports = {
           "language": "Japanese",
           "pages": 1360,
           "title": "The Tale of Genji",
-          "year": 1006
+          "year": 1006,
+          "reserved": null
         },
         {
           "id": 65,
@@ -619,7 +684,8 @@ module.exports = {
           "language": "German",
           "pages": 365,
           "title": "The Man Without Qualities",
-          "year": 1931
+          "year": 1931,
+          "reserved": null
         },
         {
           "id": 66,
@@ -628,7 +694,8 @@ module.exports = {
           "language": "English",
           "pages": 317,
           "title": "Lolita",
-          "year": 1955
+          "year": 1955,
+          "reserved": null
         },
         {
           "id": 67,
@@ -637,7 +704,8 @@ module.exports = {
           "language": "English",
           "pages": 272,
           "title": "Nineteen Eighty-Four",
-          "year": 1949
+          "year": 1949,
+          "reserved": null
         },
         {
           "id": 68,
@@ -646,7 +714,8 @@ module.exports = {
           "language": "Classical Latin",
           "pages": 576,
           "title": "Metamorphoses",
-          "year": 100
+          "year": 100,
+          "reserved": null
         },
         {
           "id": 69,
@@ -655,7 +724,8 @@ module.exports = {
           "language": "Portuguese",
           "pages": 272,
           "title": "The Book of Disquiet",
-          "year": 1928
+          "year": 1928,
+          "reserved": null
         },
         {
           "id": 70,
@@ -664,7 +734,8 @@ module.exports = {
           "language": "English",
           "pages": 842,
           "title": "Tales",
-          "year": 1950
+          "year": 1950,
+          "reserved": null
         },
         {
           "id": 71,
@@ -673,7 +744,8 @@ module.exports = {
           "language": "French",
           "pages": 2408,
           "title": "In Search of Lost Time",
-          "year": 1920
+          "year": 1920,
+          "reserved": null
         },
         {
           "id": 72,
@@ -682,7 +754,8 @@ module.exports = {
           "language": "French",
           "pages": 623,
           "title": "Gargantua and Pantagruel",
-          "year": 1533
+          "year": 1533,
+          "reserved": null
         },
         {
           "id": 73,
@@ -691,7 +764,8 @@ module.exports = {
           "language": "Spanish",
           "pages": 124,
           "title": "Pedro P\u00e1ramo",
-          "year": 1955
+          "year": 1955,
+          "reserved": null
         },
         {
           "id": 74,
@@ -700,7 +774,8 @@ module.exports = {
           "language": "Persian",
           "pages": 438,
           "title": "The Masnavi",
-          "year": 1236
+          "year": 1236,
+          "reserved": null
         },
         {
           "id": 75,
@@ -709,7 +784,8 @@ module.exports = {
           "language": "English",
           "pages": 536,
           "title": "Midnight's Children",
-          "year": 1981
+          "year": 1981,
+          "reserved": null
         },
         {
           "id": 76,
@@ -718,7 +794,8 @@ module.exports = {
           "language": "Persian",
           "pages": 298,
           "title": "Bostan",
-          "year": 1257
+          "year": 1257,
+          "reserved": null
         },
         {
           "id": 77,
@@ -727,7 +804,8 @@ module.exports = {
           "language": "Arabic",
           "pages": 139,
           "title": "Season of Migration to the North",
-          "year": 1966
+          "year": 1966,
+          "reserved": null
         },
         {
           "id": 78,
@@ -736,7 +814,8 @@ module.exports = {
           "language": "Portuguese",
           "pages": 352,
           "title": "Blindness",
-          "year": 1995
+          "year": 1995,
+          "reserved": null
         },
         {
           "id": 79,
@@ -745,7 +824,8 @@ module.exports = {
           "language": "English",
           "pages": 432,
           "title": "Hamlet",
-          "year": 1603
+          "year": 1603,
+          "reserved": null
         },
         {
           "id": 80,
@@ -754,7 +834,8 @@ module.exports = {
           "language": "English",
           "pages": 384,
           "title": "King Lear",
-          "year": 1608
+          "year": 1608,
+          "reserved": null
         },
         {
           "id": 81,
@@ -763,7 +844,8 @@ module.exports = {
           "language": "English",
           "pages": 314,
           "title": "Othello",
-          "year": 1609
+          "year": 1609,
+          "reserved": null
         },
         {
           "id": 82,
@@ -772,7 +854,8 @@ module.exports = {
           "language": "Greek",
           "pages": 88,
           "title": "Oedipus the King",
-          "year": -430
+          "year": -430,
+          "reserved": null
         },
         {
           "id": 83,
@@ -781,7 +864,8 @@ module.exports = {
           "language": "French",
           "pages": 576,
           "title": "The Red and the Black",
-          "year": 1830
+          "year": 1830,
+          "reserved": null
         },
         {
           "id": 84,
@@ -790,7 +874,8 @@ module.exports = {
           "language": "English",
           "pages": 640,
           "title": "The Life And Opinions of Tristram Shandy",
-          "year": 1760
+          "year": 1760,
+          "reserved": null
         },
         {
           "id": 85,
@@ -799,7 +884,8 @@ module.exports = {
           "language": "Italian",
           "pages": 412,
           "title": "Confessions of Zeno",
-          "year": 1923
+          "year": 1923,
+          "reserved": null
         },
         {
           "id": 86,
@@ -808,7 +894,8 @@ module.exports = {
           "language": "English",
           "pages": 178,
           "title": "Gulliver's Travels",
-          "year": 1726
+          "year": 1726,
+          "reserved": null
         },
         {
           "id": 87,
@@ -817,7 +904,8 @@ module.exports = {
           "language": "Russian",
           "pages": 1296,
           "title": "War and Peace",
-          "year": 1867
+          "year": 1867,
+          "reserved": null
         },
         {
           "id": 88,
@@ -826,7 +914,8 @@ module.exports = {
           "language": "Russian",
           "pages": 864,
           "title": "Anna Karenina",
-          "year": 1877
+          "year": 1877,
+          "reserved": null
         },
         {
           "id": 89,
@@ -835,7 +924,8 @@ module.exports = {
           "language": "Russian",
           "pages": 92,
           "title": "The Death of Ivan Ilyich",
-          "year": 1886
+          "year": 1886,
+          "reserved": null
         },
         {
           "id": 90,
@@ -844,7 +934,8 @@ module.exports = {
           "language": "English",
           "pages": 224,
           "title": "The Adventures of Huckleberry Finn",
-          "year": 1884
+          "year": 1884,
+          "reserved": null
         },
         {
           "id": 91,
@@ -853,7 +944,8 @@ module.exports = {
           "language": "Sanskrit",
           "pages": 152,
           "title": "Ramayana",
-          "year": -450
+          "year": -450,
+          "reserved": null
         },
         {
           "id": 92,
@@ -862,7 +954,8 @@ module.exports = {
           "language": "Classical Latin",
           "pages": 442,
           "title": "The Aeneid",
-          "year": -23
+          "year": -23,
+          "reserved": null
         },
         {
           "id": 93,
@@ -871,7 +964,8 @@ module.exports = {
           "language": "Sanskrit",
           "pages": 276,
           "title": "Mahabharata",
-          "year": -700
+          "year": -700,
+          "reserved": null
         },
         {
           "id": 94,
@@ -880,7 +974,8 @@ module.exports = {
           "language": "English",
           "pages": 152,
           "title": "Leaves of Grass",
-          "year": 1855
+          "year": 1855,
+          "reserved": null
         },
         {
           "id": 95,
@@ -889,7 +984,8 @@ module.exports = {
           "language": "English",
           "pages": 216,
           "title": "Mrs Dalloway",
-          "year": 1925
+          "year": 1925,
+          "reserved": null
         },
         {
           "id": 96,
@@ -898,7 +994,8 @@ module.exports = {
           "language": "English",
           "pages": 209,
           "title": "To the Lighthouse",
-          "year": 1927
+          "year": 1927,
+          "reserved": null
         },
         {
           "id": 97,
@@ -907,7 +1004,8 @@ module.exports = {
           "language": "French",
           "pages": 408,
           "title": "Memoirs of Hadrian",
-          "year": 1951
+          "year": 1951,
+          "reserved": null
         }
       ],
     papers: [
@@ -925,3 +1023,11 @@ module.exports = {
       }
     ]
 };
+
+module.exports.users = [
+  {
+    username: "Alex",
+    password: "secure",
+    role: "owner"
+  }
+]

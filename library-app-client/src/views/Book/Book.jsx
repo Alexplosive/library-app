@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useState } from "react";
 
-function Book ({ book, user, setScreen }) {
+function Book ({ book, user, setScreen, getBooks }) {
   const [updateForm, setUpdateForm] = useState(undefined);
 
   function deleteBook(){
     axios.delete(`/api/v1/books/delete/${book.id}`).
-      then((response) => { console.log(response.status, response.data.token) })
+      then((response) => { console.log(response.status, response.data.token) }).then(() => getBooks())
   }
 
   function updateBook(){
@@ -42,7 +42,7 @@ function Book ({ book, user, setScreen }) {
     };
     axios.put(`/api/v1/books/update/${book.id}`, bookData).
       then((response) => { console.log(response.status, response.data.token)
-    }).then(() => setUpdateForm(undefined));
+    }).then(() => setUpdateForm(undefined)).then(() => getBooks());
   }; 
 
   let options = ""

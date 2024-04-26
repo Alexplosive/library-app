@@ -22,7 +22,7 @@ function Articlestore({ setScreen, user }){
   
   if (articles.length > 0){
     allArticles = articles.map((article) => {
-      return <Article article={article} key={article.id} user={ user } />
+      return <Article article={article} key={article.id} user={ user } getArticles={ getArticles } />
     })
   } else {
     return (

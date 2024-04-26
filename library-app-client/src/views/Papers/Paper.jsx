@@ -1,12 +1,12 @@
 import axios from "axios";
 import { useState } from "react";
 
-function Paper ({ paper, user }) {
+function Paper ({ paper, user, getPapers }) {
   const [updateForm, setUpdateForm] = useState(undefined);
 
   function deletePaper(){
     axios.delete(`/api/v1/papers/delete/${paper.id}`).
-      then((response) => { console.log(response.status, response.data.token) })
+      then((response) => { console.log(response.status, response.data.token) }).then(() => getPapers())
   }
 
   function updatePaper(){
@@ -28,7 +28,7 @@ function Paper ({ paper, user }) {
     };
     axios.put(`/api/v1/papers/update/${paper.id}`, paperData).
       then((response) => { console.log(response.status, response.data.token)
-    }).then(() => setUpdateForm(undefined));
+    }).then(() => setUpdateForm(undefined)).then(() => getPapers());
   }; 
 
   let options = ""

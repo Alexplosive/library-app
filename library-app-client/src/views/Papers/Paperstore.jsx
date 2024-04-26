@@ -22,7 +22,7 @@ function Paperstore({ setScreen, user }){
   
   if (papers.length > 0){
     allPapers = papers.map((paper) => {
-      return <Paper paper={paper} key={paper.id} user={user} />
+      return <Paper paper={paper} key={paper.id} user={user} getPapers={getPapers} />
     })
   } else {
     return (

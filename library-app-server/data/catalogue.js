@@ -1028,6 +1028,6 @@ module.exports.users = [
   {
     username: "Alex",
     password: "secure",
-    role: "owner"
+    role: "Owner"
   }
 ]

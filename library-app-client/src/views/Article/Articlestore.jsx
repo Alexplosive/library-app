@@ -35,9 +35,6 @@ function Articlestore({ setScreen }){
 
   return (
     <div className="w-full items-center h-full">
-      <nav className="w-full">
-        <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="bg-purple-600 text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-full">Add Article</h3>
-      </nav>
       <section className="h-1/2 grid grid-cols-3 m-10">
         {allArticles} 
       </section>

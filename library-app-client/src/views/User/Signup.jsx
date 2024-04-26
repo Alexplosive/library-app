@@ -17,8 +17,8 @@ function Signup ({ setScreen }) {
       <input className="flex-1 w-40 rounded" placeholder="Title" type="text"></input>
       <input className="flex-1 w-40 rounded" placeholder="Research Topic" type="text"></input>
       <select className="flex-1 w-40 rounded" placeholder="Description" type="text">
-        <option value="owner">Owner</option>
-        <option value="emp">Employee</option>
+        <option value="Owner">Owner</option>
+        <option value="Employee">Employee</option>
       </select>
       <button type="submit" className="flex-1 w-40 bg-white rounded border border-current hover:bg-gray-300">Submit</button>
     </form>

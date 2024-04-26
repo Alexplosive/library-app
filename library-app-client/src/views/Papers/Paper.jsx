@@ -35,7 +35,7 @@ function Paper ({ paper }) {
     return updateForm;
   }
   return(
-    <section className="bg-green-600 border border-current flex flex-col h-full items-center m-0 overflow-y-scroll">
+    <section className="bg-white border border-current flex flex-col h-full items-center m-0">
       <p className="text-center font-bold underline">{paper.title} </p>
       <p className="text-center font-bold">{paper.research_topic} </p>
       <p className="text-center">{paper.description} </p>

@@ -34,10 +34,7 @@ function Paperstore({ setScreen }){
   }
 
   return (
-    <div className="w-full items-center h-full overflow-y-scroll">
-      <nav className="w-full">
-        <h3 onClick={() => { setScreen('ADD-PAPER') }} className="bg-blue-600 text-center border border-current cursor-pointer hover:bg-blue-800 sticky w-full">Add Paper</h3>
-      </nav>
+    <div className="w-full items-center h-full">
       <section className="h-1/2 grid grid-cols-3 m-10">
         {allPapers} 
       </section>

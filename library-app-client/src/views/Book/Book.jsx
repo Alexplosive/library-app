@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-function Book ({ book, user }) {
+function Book ({ book, user, setScreen }) {
   const [updateForm, setUpdateForm] = useState(undefined);
 
   function deleteBook(){
@@ -22,8 +22,12 @@ function Book ({ book, user }) {
   }
 
   function reserveBook(){
-    axios.post(`/api/v1/books/reserve/${book.id}`, { username : user.username }).
-      then((response) => { console.log(response.status)})
+    if(user){
+      axios.post(`/api/v1/books/reserve/${book.id}`, { username : user.username }).
+        then((response) => { console.log(response.status)})
+    } else {
+      setScreen('LOGIN')
+    }
   }
 
   const handleSubmit = (e) => {

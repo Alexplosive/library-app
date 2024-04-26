@@ -17,7 +17,7 @@ function App() {
 
   if (screen === 'HOME'){
     return (
-      <div className="h-full bg-yellow-500">
+      <div className="h-full bg-black-500">
         <Home setScreen={ setScreen } />
       </div>
     );
@@ -25,14 +25,14 @@ function App() {
   
   if(screen === 'BOOKS'){
     return (
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="bg-purple-600 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-full">Add Book</h3>
-        <section className="bg-current h-[calc(100vh-148.5px)] overflow-y-scroll">
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Book</h3>
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Bookstore setScreen={ setScreen } user={ user } />
         </section>
         <footer>
-          <h1 onClick={() => {setScreen('HOME')}} className="font-bold bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
         </footer>
       </div>  
     )
@@ -40,13 +40,14 @@ function App() {
 
   if (screen === 'ARTICLES') {
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-current h-[calc(100vh-130px)] overflow-y-scroll">
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user }  setUser={ setUser } />
+        <h3 onClick={() => { setScreen('ADD-ARTICLE') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Article</h3>
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Articlestore setScreen={ setScreen } />
         </section>
         <footer>
-          <h1 onClick={() => {setScreen('HOME')}} className="font-bold bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
         </footer>
       </div>  
     )
@@ -54,13 +55,14 @@ function App() {
 
   if (screen === 'PAPERS') {
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-current-400 h-[calc(100vh-130px)] overflow-y-scroll">
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <h3 onClick={() => { setScreen('ADD-BOOK') }} className="rounded-3xl bg-purple-600 m-5 text-2xl text-center border border-current cursor-pointer hover:bg-purple-800 sticky w-7/8">Add Paper</h3>
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Paperstore setScreen={ setScreen } />
         </section>
         <footer>
-          <h1 onClick={() => {setScreen('HOME')}} className="font-bold bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
         </footer>
       </div>  
     )
@@ -68,56 +70,71 @@ function App() {
 
   if (screen === 'ADD-BOOK'){
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-130px)]">
-          <AddBook />
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
+          <AddBook setScreen={ setScreen } />
         </section>
+        <footer>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+        </footer>
       </div>  
     )
   }
 
   if (screen === 'ADD-ARTICLE'){
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-130px)]">
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <AddArticle setScreen={ setScreen } />
         </section>
-      </div>  
+        <footer>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+        </footer>
+      </div>   
     )
   }
 
   if (screen === 'ADD-PAPER'){
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-130px)]">
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <AddPaper setScreen={ setScreen } />
         </section>
+        <footer>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+        </footer>
       </div>  
     )
   }
 
   if (screen === 'SIGNUP'){
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-130px)]">
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
           <Signup setScreen={ setScreen } />
         </section>
-      </div>  
+        <footer>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+        </footer>
+      </div>   
     )
   }
 
   if (screen === 'LOGIN'){
     return(
-      <div className="m-0 h-full">
-        <Navbar setScreen={ setScreen }/>
-        <section className="bg-green-400 h-[calc(100vh-130px)]">
-          <Login setScreen={ setScreen } setUser={ setUser } />
+      <div className="m-0 overflow-hidden">
+        <Navbar setScreen={ setScreen } user={ user } setUser={ setUser } />
+        <section className="bg-current h-[calc(100vh-320px)] overflow-y-scroll">
+          <Login setScreen={ setScreen } setUser={ setUser }/>
         </section>
-      </div>  
+        <footer>
+          <h1 onClick={() => {setScreen('HOME')}} className="font-bold m-5 rounded-3xl hover:bg-purple-800 bg-purple-600 border border-current text-5xl text-center cursor-pointer">Back to home</h1>
+        </footer>
+      </div>    
     )
   }
 }

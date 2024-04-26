@@ -7,11 +7,22 @@ module.exports.getAllPapers = (req, res) => {
 
 module.exports.addPapers = (req, res) => {
     try { 
-        const newPaper = {
-            id: catalogue.papers[catalogue.papers.length - 1].id + 1,
-            title: req.body.title,
-            research_topic: req.body.research_topic,
-            description: req.body.description
+        const nextIndex = catalogue.papers.length
+        let newPaper = ""
+        if(nextIndex === 0){
+            newPaper = {
+                id: 0,
+                title: req.body.title,
+                research_topic: req.body.research_topic,
+                description: req.body.description
+            }
+        } else {
+            newPaper = {
+                id: catalogue.papers[nextIndex - 1].id + 1,
+                title: req.body.title,
+                research_topic: req.body.research_topic,
+                description: req.body.description
+            }
         }
 
         catalogue.papers.push(newPaper)

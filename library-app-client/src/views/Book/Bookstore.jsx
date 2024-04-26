@@ -33,7 +33,7 @@ function Bookstore ({ setScreen, user}) {
   if (books.length > 0){
     allBooks = books.map((book) => {
       if(book){
-        return <Book book={book} key={book.title} setScreen={ setScreen } user={ user } getBooks={ getBooks } />
+        return <Book book={book} key={book.id} setScreen={ setScreen } user={ user } getBooks={ getBooks } />
       }
     })
   } else {

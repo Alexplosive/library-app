@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-function AddBook () {
+function AddBook ({setScreen}) {
   const handleSubmit = (e) => {
     e.preventDefault();
     const bookData = {
@@ -13,7 +13,7 @@ function AddBook () {
       year: e.target[5].value
     };
     axios.post('/api/v1/books/add', bookData).
-      then((response) => { console.log(response.status, response.data.token)
+      then((response) => { console.log(response.status, response.data.token) }).then(() => { setScreen('BOOKS')
     });
   };
 

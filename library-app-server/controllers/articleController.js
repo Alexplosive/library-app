@@ -7,17 +7,17 @@ module.exports.getAllArticles = (req, res) => {
 
 module.exports.addArticle = (req, res) => {
     try {
-        const length = catalogue.articles.length;
-        let newArticle = undefined;
-        if(length !== 0){
+        const nextIndex = catalogue.articles.length
+        let newArticle = ""
+        if(nextIndex === 0){
             newArticle = {
-              id: catalogue.articles[catalogue.articles.length - 1].id + 1,
+              id: 0,
               title: req.body.title,
               description: req.body.description
             }
         } else {
             newArticle = {
-                id: 0,
+                id: catalogue.articles[nextIndex - 1].id + 1,
                 title: req.body.title,
                 description: req.body.description
               }

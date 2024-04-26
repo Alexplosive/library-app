@@ -7,14 +7,28 @@ module.exports.getAllBooks = (req, res) => {
 
 module.exports.addBook = (req, res) => {
     try { 
-        const newBook = {
-            id: catalogue.books[catalogue.books.length - 1].id + 1,
-            author: req.body.author,
-            country: req.body.country,
-            language: req.body.language,
-            pages: req.body.pages,
-            title: req.body.title,
-            year: req.body.year
+        const nextIndex = catalogue.books.length
+        let newBook = ""
+        if(nextIndex === 0){
+            newBook = {
+                id: 0,
+                author: req.body.author,
+                country: req.body.country,
+                language: req.body.language,
+                pages: req.body.pages,
+                title: req.body.title,
+                year: req.body.year
+            }
+        } else {
+            newBook = {
+                id: catalogue.books[nextIndex - 1].id + 1,
+                author: req.body.author,
+                country: req.body.country,
+                language: req.body.language,
+                pages: req.body.pages,
+                title: req.body.title,
+                year: req.body.year
+            }
         }
 
         catalogue.books.push(newBook)
